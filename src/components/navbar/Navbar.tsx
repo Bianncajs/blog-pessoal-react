@@ -1,6 +1,19 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom"
+import { AuthContext } from "../../contexts/AuthContext";
 
 function Navbar() {
+  const navigate = useNavigate();
+
+    const { handleLogout } = useContext(AuthContext)
+
+    function logout() {
+
+        handleLogout()
+        alert('O Usuário foi desconectado com sucesso!')
+        navigate('/')
+    }
+
   return (
     <div className="w-full bg-[#5C7B91] text-white flex justify-center py-4">
       <div className="container flex justify-between items-center text-lg">
@@ -15,7 +28,7 @@ function Navbar() {
             Postagens
           </button>
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
-            Temas
+          <Link to='/temas' className='hover:underline'>Temas</Link>
           </button>
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
             Cadastrar tema

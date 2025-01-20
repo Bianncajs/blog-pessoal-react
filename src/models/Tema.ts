@@ -1,4 +1,4 @@
-import Postagem from "./Postagem";
+import Postagem from "./Postagem.ts";
 
 export default interface Tema {
     id: number;

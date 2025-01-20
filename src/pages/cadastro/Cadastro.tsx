@@ -57,7 +57,7 @@ function Cadastro() {
         alert('Erro ao cadastrar o usuário!')
       }
     }else{
-      alert('Dados do usuário inconsistentes! Verifique as informações do cadastro.')
+      alert('Dados estão inconsistentes. Verifique as informações do cadastro')
       setUsuario({...usuario, senha: ''})
       setConfirmaSenha('')
     }
@@ -144,13 +144,16 @@ function Cadastro() {
                            hover:bg-indigo-900 w-1/2 py-2
                            flex justify-center' 
                 >
-                  {isLoading ? <RotatingLines
+                  {isLoading ? 
+                  
+                  <RotatingLines
                     strokeColor="white"
                     strokeWidth="5"
                     animationDuration="0.75"
                     width="24"
                     visible={true}
-                  /> :
+                  /> 
+                  :
                     <span>Cadastrar</span>
                   }
               
