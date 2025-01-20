@@ -31,7 +31,7 @@ function Navbar() {
           <Link to='/temas' className='hover:underline'>Temas</Link>
           </button>
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
-            Cadastrar tema
+          <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
           </button>
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
             Perfil
