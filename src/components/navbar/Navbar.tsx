@@ -25,7 +25,7 @@ function Navbar() {
 
         <div className="flex gap-6">
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
-            Postagens
+          <Link to='/postagens' className='hover:underline'>Postagens</Link>
           </button>
           <button className="px-4 py-2 bg-[#3A5A77] hover:bg-[#2E4757] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3A5A77] transition duration-300">
           <Link to='/temas' className='hover:underline'>Temas</Link>
